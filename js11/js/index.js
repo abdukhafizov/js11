@@ -17,23 +17,29 @@ let passport = {
         to: "2025"
     }
 }
-
+//1
 let assg = Object.assign(user, passport)
 
 console.log(user, passport);
 
-
+//2
 console.log(
     Object.keys(user)
 );
 console.log(
     Object.values(user)
 );
+//3
+let arr = [
+    'Alex'
+]
+let arrtwo = [
+    'Albert'
+]
+let arrthree = arr.concat(arrtwo);
+console.log(arrthree)
 
-console.log(
-    Object.entries(user, passport)
-);
-
+//
 let kods = {
     number: [],
     boolean: [],
@@ -41,7 +47,7 @@ let kods = {
     object: []
 }
 
-passport.filter(item => {
+values.filter(item => {
     let key = typeof item
 
     if(kods[key]){
@@ -49,3 +55,4 @@ passport.filter(item => {
     }
 })
 
+console.log(kods);
