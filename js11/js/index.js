@@ -39,20 +39,3 @@ let arrtwo = [
 let arrthree = arr.concat(arrtwo);
 console.log(arrthree)
 
-//
-let kods = {
-    number: [],
-    boolean: [],
-    string: [],
-    object: []
-}
-
-values.filter(item => {
-    let key = typeof item
-
-    if(kods[key]){
-        kods[key].push(item)
-    }
-})
-
-console.log(kods);
